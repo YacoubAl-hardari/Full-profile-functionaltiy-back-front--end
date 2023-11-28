@@ -2,17 +2,33 @@
 
 **The Project: Clone the project repository from the source control system to your local machine.**
 
-Install Dependencies: Run the command "composer install" in the project directory to install all the required dependencies for the project.
+**Install Dependencies:** Run the command in the project directory to install all the required dependencies for the project.
+ ```installComposer
+ composer install
+ ``` 
 
-Rename the Environment File: In the project directory, locate the file named "env.example" and rename it to ".env". This file contains environment-specific configuration settings.
+**Rename the Environment File:** In the project directory, locate the file named **"env.example" and rename it to ".env".** This file contains environment-specific configuration settings.
 
-Generate Application Key: Run the command "php artisan key:generate" to generate a unique application key for your project. This key is used for encryption and other security purposes.
+**Generate Application Key:** Run the command  to generate a unique application key for your project. This key is used for encryption and other security purposes.
+```
+php artisan key:generate
+```
 
-Migrate Database Tables: To create the necessary tables in the database, run the command "php artisan migrate". This will set up the required database structure for the project.
+**Migrate Database Tables:** To create the necessary tables in the database, run the command. This will set up the required database structure for the project.
+```
+php artisan migrate
+```
 
-Generate User Account: To create a user account for the application, use the command "php artisan make:filament-user" followed by your name, Gmail, and password. This command will generate a user account with the provided credentials.
+**Generate User Account:** To create a user account for the application, use the command  followed by your name, Gmail, and password. This command will generate a user account with the provided credentials.
+```
+php artisan make:filament-user
+```
 
-Start the Server: Finally, run the command "php artisan serve" to start the PHP development server. 
+
+**Start the Server:** Finally, run the command "" to start the PHP development server. 
+```
+php artisan serve
+```
 
 ## Contributing
 
