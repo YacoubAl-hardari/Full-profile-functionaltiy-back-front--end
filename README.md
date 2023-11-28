@@ -1,6 +1,9 @@
 ##  Run the project
 
 **The Project: Clone the project repository from the source control system to your local machine.**
+```
+git clone https://github.com/YacoubAl-hardari/Full-profile-functionaltiy-back-front--end.git
+```
 
 **Install Dependencies:** Run the command in the project directory to install all the required dependencies for the project.
  ```installComposer
