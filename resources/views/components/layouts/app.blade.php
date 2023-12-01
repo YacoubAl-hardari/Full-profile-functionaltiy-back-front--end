@@ -20,15 +20,6 @@
     <!-- Tailwind css -->
     <link rel="stylesheet" href="{{ asset('front/assets/css/styles.css') }}" />
 
-    <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-        document.documentElement.classList.add("dark");
-      } 
-      if (localStorage.getItem("theme-color") === "light") {
-        document.documentElement.classList.remove("dark");
-      } 
-    </script>
   </head>
   <body class="font-rubik dark:bg-dark_primary_bg">
 
@@ -156,6 +147,7 @@
         document.getElementById("light__to--dark")?.classList.remove("dark--version");
       } 
     </script>
+    
   </body>
 
 </html>

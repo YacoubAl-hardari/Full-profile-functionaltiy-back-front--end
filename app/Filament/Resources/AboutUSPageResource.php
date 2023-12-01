@@ -104,10 +104,11 @@ class AboutUSPageResource extends Resource
                                         Forms\Components\TextInput::make('number')
                                         ->numeric()
                                         ->required(),
-                                ])->columns(2),
+                                ])->columnSpanFull()
+                                ->grid(4),
 
                         ]
-                    )
+                    )->columnSpanFull()
                     ->columns(3),
 
                 Section::make('Experience Details')
@@ -122,7 +123,7 @@ class AboutUSPageResource extends Resource
                             Forms\Components\TextInput::make('EXPERICNCE_AND_EDUCATION')
                                 ->required()
                                 ->maxLength(255),
-                            Forms\Components\TextInput::make('EXPERICNCE_AND_EDUCATION _desc')
+                            Forms\Components\TextInput::make('EXPERICNCE_AND_EDUCATION_desc')
                                 ->required()
                                 ->maxLength(255),
                             Forms\Components\TextInput::make('EXPERICNCE_AND_EDUCATION_header')
@@ -159,8 +160,10 @@ class AboutUSPageResource extends Resource
                         [
                             Repeater::make('beanners')
                                 ->schema([
-                                    FileUpload::make('beanners')
-                                        ->required()
+                                    FileUpload::make('lightImage')
+                                        ->required(),
+                                    FileUpload::make('darkImage')
+                                        ->required(),
                                 ])->columnSpanFull()
                                 ->grid(4)
                                 ,

@@ -2,12 +2,14 @@
 
 namespace App\Livewire;
 
+use App\Models\AboutUSPage;
 use Livewire\Component;
 
 class ShowAboutPage extends Component
 {
     public function render()
     {
-        return view('livewire.show-about-page');
+        $aboutUs = AboutUSPage::orderBy('id','DESC')->first();
+        return view('livewire.show-about-page',['aboutUs'=>$aboutUs]);
     }
 }
