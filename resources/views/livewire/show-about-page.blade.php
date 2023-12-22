@@ -7,8 +7,8 @@
           <div class="flex justify-end md:justify-between items-center">
               <div class="logo hidden md:block">
                   <a href="index-2.html">
-                    <img class="hidden dark:block" src="assets/images/logo-light.png" alt="">
-                    <img class="dark:hidden" src="assets/images/logo.png" alt="">
+                    <img class="hidden dark:block" src="{{ asset('front/assets/images/logo-light.png') }}" alt="">
+                    <img class="dark:hidden" src="{{ asset('front/assets/images/logo.png') }}" alt="">
                   </a>
               </div>
               <div class="lg:hidden">
