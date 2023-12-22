@@ -2,6 +2,7 @@
 
 use App\Livewire\ShowHomePage;
 use App\Livewire\ShowAboutPage;
+use App\Livewire\ShowServicesPage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', ShowHomePage::class)->name('home');
 Route::get('/about', ShowAboutPage::class)->name('about');
+Route::get('/services', ShowServicesPage::class)->name('services');
