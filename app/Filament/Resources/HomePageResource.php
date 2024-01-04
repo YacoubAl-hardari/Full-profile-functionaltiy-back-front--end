@@ -30,16 +30,16 @@ class HomePageResource extends Resource
                   
                 Forms\Components\TextInput::make('counter')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(50),
                 Forms\Components\TextInput::make('text')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('labelText')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(50),
                 Forms\Components\TextInput::make('header')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(50),
                 Forms\Components\TextInput::make('samll_description')
                     ->required()
                     ->maxLength(255),
