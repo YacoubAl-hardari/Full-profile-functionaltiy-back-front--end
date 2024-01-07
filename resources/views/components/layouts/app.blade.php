@@ -85,9 +85,9 @@
                   </li>
                   <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" wire:navigate href="{{ route('about') }}">About</a></li>
                   <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" wire:navigate href="{{ route('services') }}">Services</a></li>
-                  <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" href="portfolio-2.html">Portfolio</a></li>
-                  <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" href="blog-2.html">Blog</a></li>
-                  <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" href="contact-2.html">Contact</a></li>
+                  <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" href="{{ route('services') }}">Portfolio</a></li>
+                  <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" href="{{ route('services') }}">Blog</a></li>
+                  <li class="offcanvas__menu_li"><a class="offcanvas__menu_item dark:text-white" href="{{ route('services') }}">Contact</a></li>
               </ul>
               <button class="flex mx-auto bg-accent1 lg:px-[15px] px-[12px] xl:py-[12px] py-[10px] rounded-[2rem] text-[16px] xl:text-[18px] font-medium text-white items-center transition duration-300 relative after:absolute :after:content-[''] after:bg-primary after:h-full after:w-full after:bottom-0 after:left-0 after:rounded-[2rem] after:trasition after:duration-300 after:opacity-0 hover:after:opacity-[1] mt-[30px]">
                 <span class="icon bg-[#EFEBEB] text-accent1 w-[34px] h-[34px] rounded-full flex items-center justify-center ltr:xl:mr-[15px] ltr:mr-[10px] rtl:xl:ml-[15px] rtl:ml-[10px] relative z-[8] flex-shrink-0">
